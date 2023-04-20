@@ -24,7 +24,7 @@
                 </VerticalStackLayout>
             </Chart:SfCircularChart.Title>
             <Chart:SfCircularChart.Legend>
-                <Chart:ChartLegend Placement="{OnPlatform WinUI='Right', MacCatalyst='Right', iOS='Bottom', Android='Bottom'}">
+                <Chart:ChartLegend Placement="Right">
                     <Chart:ChartLegend.ItemTemplate>
                         <DataTemplate>
                             <StackLayout Orientation="Horizontal" >
@@ -32,7 +32,7 @@
                                            Fill="{Binding IconBrush}"/>
                                 <Label Margin="3,0,10,0" VerticalTextAlignment="Center"
                                        Text="{Binding Text}"
-                                       FontSize="20" TextColor="Black"/>
+                                       FontSize="{OnPlatform WinUI='20', MacCatalyst='20', iOS='15', Android='15'}" TextColor="Black"/>
                             </StackLayout>
                         </DataTemplate>
                     </Chart:ChartLegend.ItemTemplate>
