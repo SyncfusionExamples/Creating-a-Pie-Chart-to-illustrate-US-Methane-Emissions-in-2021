@@ -8,8 +8,7 @@ namespace PieChartDemo
 {
     public class PieChartModel
     {
-        public string CrimeBiasType { get; set; }
-        public double PercentageOfVictims { get; set; }
-        public double Victims { get; set; }
+        public string EmissionSource { get; set; }
+        public double EmissionPercentage { get; set; }
     }
 }
