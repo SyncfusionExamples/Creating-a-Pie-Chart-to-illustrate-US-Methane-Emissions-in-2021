@@ -16,7 +16,8 @@
             <Chart:SfCircularChart.Title>
                 <Label Text="2021 U.S. Methane Emissions, By Source"
                         HorizontalTextAlignment="Center" TextColor="White"
-                       FontSize="Medium" FontAttributes="Bold" BackgroundColor="#199CB3"/>
+                       FontSize="{OnPlatform WinUI='Medium', MacCatalyst='40', iOS='Medium', Android='Medium'}"
+                       FontAttributes="Bold" BackgroundColor="#199CB3"/>
             </Chart:SfCircularChart.Title>
 
             <Chart:SfCircularChart.TooltipBehavior>
@@ -40,7 +41,8 @@
                 <Chart:PieSeries.TooltipTemplate>
                     <DataTemplate>
                         <Label Text="{Binding Item.EmissionSource}" FontAttributes="Bold" 
-                                   TextColor="White" MaximumWidthRequest="{OnPlatform WinUI='140', MacCatalyst='300', iOS='300', Android='130'}" 
+                               FontSize="{OnPlatform WinUI='14', MacCatalyst='Large', iOS='Small', Android='Small'}"
+                                   TextColor="White" MaximumWidthRequest="{OnPlatform WinUI='140', MacCatalyst='500', iOS='300', Android='130'}" 
                                    LineBreakMode="WordWrap" HorizontalOptions="Fill" VerticalTextAlignment="Center"
                                    VerticalOptions="Fill" HorizontalTextAlignment="Center"/>
                     </DataTemplate>
