@@ -16,7 +16,7 @@
             <Chart:SfCircularChart.Title>
                 <Label Text="2021 U.S. Methane Emissions, By Source"
                         HorizontalTextAlignment="Center" TextColor="White"
-                       FontSize="{OnPlatform WinUI='Medium', MacCatalyst='40', iOS='Medium', Android='Medium'}"
+                       FontSize="{OnPlatform WinUI='Medium', MacCatalyst='35', iOS='Medium', Android='Medium'}"
                        FontAttributes="Bold" BackgroundColor="#199CB3"/>
             </Chart:SfCircularChart.Title>
 
