@@ -41,7 +41,7 @@
                 <Chart:PieSeries.TooltipTemplate>
                     <DataTemplate>
                         <Label Text="{Binding Item.EmissionSource}" FontAttributes="Bold" 
-                               FontSize="{OnPlatform WinUI='14', MacCatalyst='Large', iOS='Small', Android='Small'}"
+                               FontSize="{OnPlatform MacCatalyst='Large'}"
                                    TextColor="White" MaximumWidthRequest="{OnPlatform WinUI='140', MacCatalyst='500', iOS='300', Android='130'}" 
                                    LineBreakMode="WordWrap" HorizontalOptions="Fill" VerticalTextAlignment="Center"
                                    VerticalOptions="Fill" HorizontalTextAlignment="Center"/>
