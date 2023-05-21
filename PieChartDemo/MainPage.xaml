@@ -14,10 +14,13 @@
         <Chart:SfCircularChart x:Name="chart">
 
             <Chart:SfCircularChart.Title>
-                <Label Text="2021 U.S. Methane Emissions, By Source"
+                <Border StrokeShape="{OnPlatform WinUI='RoundRectangle 8', Android='RoundRectangle 5', MacCatalyst='RoundRectangle 15', iOS='RoundRectangle 8'}"
+                        Stroke="#199CB3" BackgroundColor="#199CB3" StrokeThickness="3">
+                <Label Text="2021 U.S. Methane Emissions, By Source" 
                         HorizontalTextAlignment="Center" TextColor="White"
                        FontSize="{OnPlatform WinUI='Medium', MacCatalyst='35', iOS='Medium', Android='Medium'}"
                        FontAttributes="Bold" BackgroundColor="#199CB3"/>
+                </Border>
             </Chart:SfCircularChart.Title>
 
             <Chart:SfCircularChart.TooltipBehavior>
@@ -40,11 +43,13 @@
 
                 <Chart:PieSeries.TooltipTemplate>
                     <DataTemplate>
-                        <Label Text="{Binding Item.EmissionSource}" FontAttributes="Bold" 
-                               FontSize="{OnPlatform MacCatalyst='Large'}"
-                                   TextColor="White" MaximumWidthRequest="{OnPlatform WinUI='140', MacCatalyst='500', iOS='300', Android='130'}" 
-                                   LineBreakMode="WordWrap" HorizontalOptions="Fill" VerticalTextAlignment="Center"
-                                   VerticalOptions="Fill" HorizontalTextAlignment="Center"/>
+                        <Grid ColumnDefinitions="{OnPlatform iOS='160', MacCatalyst='160'}" RowDefinitions="Auto"> 
+                        <Label Grid.Row="0" Grid.Column="0" Text="{Binding Item.EmissionSource}" FontAttributes="Bold" 
+                               FontSize="{OnPlatform MacCatalyst='Medium'}"
+                               TextColor="White" MaximumWidthRequest="{OnPlatform WinUI='140', Android='130'}" 
+                               LineBreakMode="WordWrap" HorizontalOptions="Fill" VerticalTextAlignment="Center"
+                               VerticalOptions="Fill" HorizontalTextAlignment="Center"/>
+                        </Grid>
                     </DataTemplate>
                 </Chart:PieSeries.TooltipTemplate>
 
