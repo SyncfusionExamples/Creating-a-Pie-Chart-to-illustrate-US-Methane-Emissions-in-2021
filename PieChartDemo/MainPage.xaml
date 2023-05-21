@@ -43,9 +43,9 @@
 
                 <Chart:PieSeries.TooltipTemplate>
                     <DataTemplate>
-                        <Grid ColumnDefinitions="{OnPlatform iOS='160', MacCatalyst='160'}" RowDefinitions="Auto"> 
+                        <Grid ColumnDefinitions="{OnPlatform iOS='160', MacCatalyst='200'}" RowDefinitions="Auto"> 
                         <Label Grid.Row="0" Grid.Column="0" Text="{Binding Item.EmissionSource}" FontAttributes="Bold" 
-                               FontSize="{OnPlatform MacCatalyst='Medium'}"
+                               FontSize="{OnPlatform MacCatalyst='Large'}"
                                TextColor="White" MaximumWidthRequest="{OnPlatform WinUI='140', Android='130'}" 
                                LineBreakMode="WordWrap" HorizontalOptions="Fill" VerticalTextAlignment="Center"
                                VerticalOptions="Fill" HorizontalTextAlignment="Center"/>
