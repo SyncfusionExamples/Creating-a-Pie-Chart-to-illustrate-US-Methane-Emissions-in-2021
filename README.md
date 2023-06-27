@@ -4,4 +4,4 @@ The pie chart is a graphical representation which helps to organize and show dat
 <img width="710" alt="PieChartWindows" src="https://github.com/SyncfusionExamples/Creating-a-Pie-Chart-to-demonstrate-the-Share-of-Victims-by-Hate-Crime-Bias-Types/assets/105496706/0abb3459-826e-4423-8d95-e12d60ad65bd">
 
 
-For a step by step procedure, refer to the [Pie Chart Illustrating US Methane Emissions blog]()
+For a step by step procedure, refer to the [Pie Chart Illustrating US Methane Emissions blog](https://www.syncfusion.com/blogs/post/dotnet-maui-pie-chart-visualize-us-methane-emissions.aspx)
