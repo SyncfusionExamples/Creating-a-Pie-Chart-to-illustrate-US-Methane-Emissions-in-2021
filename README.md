@@ -5,3 +5,10 @@ The pie chart is a graphical representation which helps to organize and show dat
 
 
 For a step by step procedure, refer to the [Pie Chart Illustrating US Methane Emissions blog](https://www.syncfusion.com/blogs/post/dotnet-maui-pie-chart-visualize-us-methane-emissions.aspx)
+
+**KB article related to Pie chart :** [How to create a Pie Chart in .NET MAUI?](https://support.syncfusion.com/kb/article/11255/how-to-create-a-pie-chart-in-net-maui)
+
+## See also
+
+* [Pie Chart in .NET MAUI Chart](https://help.syncfusion.com/maui/circular-charts/piechart)
+
