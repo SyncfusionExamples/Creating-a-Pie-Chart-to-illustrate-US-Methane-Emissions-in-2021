@@ -1,9 +1,10 @@
-﻿namespace PieChartDemo;
-
-public partial class AppShell : Shell
+﻿namespace PieChartDemo
 {
-	public AppShell()
-	{
-		InitializeComponent();
-	}
+    public partial class AppShell : Shell
+    {
+        public AppShell()
+        {
+            InitializeComponent();
+        }
+    }
 }
